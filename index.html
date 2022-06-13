@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quote generator</title>
-    <link rel="icon" type="image/png" href="gear.webp">
+    <link rel="icon" type="image/png" href="cookie-bite-solid.svg">
     <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -14,17 +14,18 @@
 
 </head>
 
-<body>
+<body onload="init()">
+    <h1>Bonnie wisdom cookies!</h1>
     <div class="quote-container" id="quote-container">
         <!-- quote element -->
         <div class="quote-text">
             <i class="fas fa-quote-left"></i>
-            <span id="quote">what you are is what you have been. What you will be is what you do now.</span>
+            <span id="quote"></span>
             <i class="fas fa-quote-right"></i>
         </div>
         <!-- author -->
         <div class="quote-author">
-            <span id="author">Buddha</span>
+            <span id="author"></span>
         </div>
         <!-- Buttons -->
         <div class="button-container">
@@ -32,6 +33,7 @@
             <button id="new-quote">New Quote</button>
         </div>
     </div>
+
     <!-- script -->
     <script src="script.js"></script>
 </body>
