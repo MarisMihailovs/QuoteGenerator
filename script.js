@@ -1,6 +1,3 @@
-function init() {
-    document.body.style.background = 'url(bonnie1.jpg) no-repeat center center'
-}
 
 const quoteContainer = document.getElementById('quote-container');
 const quoteText = document.getElementById('quote');
