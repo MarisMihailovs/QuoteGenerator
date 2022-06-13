@@ -67,10 +67,10 @@ button {
     border: none;
     border-radius: 10px;
     color: #ffffff;
-    background-color: gray;
+    background-color: rgb(145, 154, 191);
     outline: none;
     padding: 0.5rem 1.8rem;
-    box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+    box-shadow: 0 0.3rem rgba(135, 156, 198, 0.65);
 
 }
 
@@ -81,7 +81,7 @@ button:hover {
 
 button:active {
     transform: translate(0, 0.3rem);
-    box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+    box-shadow: 0 0.1rem rgba(135, 156, 198, 0.65);
 }
 
 .twitter-button:hover {

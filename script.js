@@ -1,5 +1,4 @@
 function init() {
-
     document.body.style.background = 'url(bonnie1.jpg) no-repeat center center'
 }
 
@@ -15,7 +14,18 @@ let apiQuotes = [];
 function newQuote() {
     // pick random quote
     const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
-    authorText.textContent = quote.author;
+    // checkign if there is an author
+    if (!quote.author) {
+        authorText.textContent = 'Uknown';
+    } else {
+        authorText.textContent = quote.author;
+    }
+    // check quote length to determin styling
+    if (quote.text.length > 50) {
+        quoteText.classList.add('long-quote');
+    } else {
+        quoteText.classList.remove('long-quote');
+    }
     quoteText.textContent = quote.text;
 }
 
